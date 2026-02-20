@@ -1,12 +1,8 @@
-require_dependency 'my_controller'
-
 module AppNotificationsAccountPatch
   def self.included(base) # :nodoc:
     base.send(:include, InstanceMethods)
 
     base.class_eval do
-      unloadable # Send unloadable so it will not be unloaded in development
-
       alias_method :account_without_in_app_option, :account
       alias_method :account, :account_with_in_app_option
     end
