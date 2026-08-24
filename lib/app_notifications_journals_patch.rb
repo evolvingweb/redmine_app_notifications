@@ -35,5 +35,3 @@ module AppNotificationsJournalsPatch
     end
   end
 end
-
-Journal.send(:include, AppNotificationsJournalsPatch)

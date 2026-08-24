@@ -16,5 +16,3 @@ module AppNotificationsAccountPatch
     end
   end
 end
-
-MyController.send(:include, AppNotificationsAccountPatch)

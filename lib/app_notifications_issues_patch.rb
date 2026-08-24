@@ -24,5 +24,3 @@ module AppNotificationsIssuesPatch
     end
   end
 end
-
-Issue.send(:include, AppNotificationsIssuesPatch)
